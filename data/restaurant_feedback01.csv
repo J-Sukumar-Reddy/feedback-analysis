@@ -1,37 +1,231 @@
-restaurant_name,feedback,rating
-The Fisherman's Wharf,Great seafood and ambience!,4.8
-The Fisherman's Wharf,Service was a bit slow,3.9
-Paradise Biryani,Authentic Hyderabadi biryani,5.0
-Paradise Biryani,Food was too spicy for my taste,4.0
-Shilparamam,Beautiful setting and good food,4.6
-Shilparamam,Average food quality,3.5
-Bawarchi,Delicious biryani but crowded,4.2
-Bawarchi,Overpriced for the quality,3.8
-Olive Bistro,Excellent service and cozy atmosphere,4.7
-Olive Bistro,Food was just okay,3.9
-Hitech Biryani,Great value for money,4.5
-Hitech Biryani,Not as flavorful as expected,3.7
-Siam Trading Co.,Authentic Thai food,4.8
-Siam Trading Co.,Expensive for portion size,4.0
-Minerva Coffee Shop,Good coffee and quick service,4.3
-Minerva Coffee Shop,Food is mediocre,3.6
-Pista House,Famous for its haleem,5.0
-Pista House,Service can be improved,4.2
-Azaadi Ke Liye,Great place for casual dining,4.4
-Azaadi Ke Liye,Average experience overall,3.8
-The Royal Kitchen,Delicious Indian cuisine,4.7
-The Royal Kitchen,Wait time was too long,3.9
-Swagath Restaurant,Good variety of dishes,4.5
-Swagath Restaurant,Not very clean,3.7
-Cafe Bahar,Great biryani and kebabs,4.8
-Cafe Bahar,Noisy environment,4.0
-Kebab & Curries,Excellent kebabs,4.9
-Kebab & Curries,Portion sizes were small,4.1
-Golkonda Chimney,Fantastic BBQ,4.6
-Golkonda Chimney,Service was average,3.8
-Pista House,i was awsome,4.0
-Olive Bistro,thoppp,1.0
-The Fisherman's Wharf,good,4.0
-The Fisherman's Wharf,vvvv,3.0
-The Fisherman's Wharf,great,4.0
-Bawarchi,good,2.0
+restaurant_name,feedback,rating,date,latitude,longitude
+Spicy Hub,"Great food and service!",5,2024-01-01,17.4,78.5
+Spicy Hub,"The food was average.",3,2024-01-15,17.35,78.5
+Spicy Hub,"Not satisfied with the service.",2,2024-02-01,17.45,78.55
+Urban Bites,"Loved the pasta and ambiance.",5,2024-03-02,17.34,78.53
+Urban Bites,"Service could be better.",3,2024-03-15,17.35,78.54
+Cafe Delight,"Amazing coffee and ambiance.",4,2024-01-10,17.33,78.52
+Cafe Delight,"Too crowded on weekends.",2,2024-02-05,17.32,78.48
+Grill Street,"Best BBQ in town!",5,2024-03-08,17.39,78.51
+Grill Street,"A bit overpriced.",3,2024-03-18,17.41,78.49
+Tandoori Treat,"Excellent tandoori dishes!",5,2024-04-10,17.4,78.47
+Tandoori Treat,"Food was cold, not happy.",2,2024-04-20,17.36,78.5
+Pizza Point,"Love their pepperoni pizza!",4,2024-02-14,17.37,78.53
+Pizza Point,"Could improve the crust.",3,2024-02-28,17.38,78.55
+Burger Haven,"Best burgers in the area!",5,2024-03-20,17.45,78.52
+Burger Haven,"Slow service.",2,2024-03-25,17.43,78.5
+Noodle Nest,"Great variety of noodles!",4,2024-01-25,17.44,78.49
+Noodle Nest,"Needs more spice.",3,2024-02-15,17.42,78.51
+Spice Villa,"Wonderful experience!",5,2024-02-28,17.35,78.53
+Spice Villa,"Food was bland.",2,2024-03-05,17.33,78.54
+Biryani Bliss,"Amazing biryani, must try!",5,2024-04-02,17.39,78.5
+Biryani Bliss,"Too oily.",2,2024-04-18,17.38,78.52
+Taste Town,"Great service and food.",4,2024-01-12,17.37,78.53
+Taste Town,"The food took too long.",3,2024-01-28,17.35,78.55
+Chaat Corner,"Authentic taste!",5,2024-03-10,17.36,78.49
+Chaat Corner,"Too spicy for me.",2,2024-03-20,17.44,78.48
+Dosa Delight,"Loved the masala dosa!",5,2024-02-14,17.39,78.47
+Dosa Delight,"Sambhar was too sweet.",3,2024-03-01,17.42,78.52
+Sushi Spot,"Best sushi in Hyderabad!",5,2024-01-18,17.31,78.5
+Sushi Spot,"Rice was undercooked.",2,2024-02-01,17.34,78.48
+Taco Town,"Great tacos, fresh ingredients.",4,2024-03-05,17.33,78.53
+Taco Town,"Too expensive.",3,2024-03-15,17.36,78.51
+Waffle World,"Best waffles around!",5,2024-01-22,17.38,78.47
+Waffle World,"Chocolate syrup tasted off.",2,2024-01-30,17.37,78.5
+Pasta Palace,"Perfect pasta every time!",5,2024-03-20,17.45,78.49
+Pasta Palace,"Could use more flavor.",3,2024-03-30,17.35,78.52
+Salad Shack,"Healthy and delicious.",4,2024-01-15,17.41,78.54
+Salad Shack,"Portions too small.",3,2024-02-01,17.43,78.53
+Wrap N Roll,"Loved the chicken wrap.",5,2024-02-28,17.42,78.48
+Wrap N Roll,"Dry and flavorless.",2,2024-03-05,17.35,78.47
+Bistro Bay,"Perfect seafood options.",4,2024-01-25,17.36,78.52
+Bistro Bay,"Overcooked prawns.",2,2024-02-14,17.33,78.5
+Juice Junction,"Fresh juices and smoothies.",5,2024-03-03,17.4,78.51
+Juice Junction,"Watery taste.",2,2024-03-17,17.44,78.55
+Deli Dreams,"Good sandwiches.",4,2024-01-20,17.37,78.53
+Deli Dreams,"Bread was stale.",2,2024-02-05,17.35,78.48
+Veggie Village,"Nice vegetarian options.",5,2024-01-30,17.39,78.5
+Veggie Village,"Lacked flavor.",3,2024-02-10,17.31,78.52
+The Curry Club,"Great curries and naan.",5,2024-03-15,17.32,78.47
+The Curry Club,"Too spicy.",2,2024-03-25,17.43,78.49
+Falafel Fiesta,"Loved the falafel!",5,2024-01-28,17.38,78.54
+Falafel Fiesta,"Too dry.",3,2024-02-20,17.42,78.55
+Sizzler Station,"Amazing sizzlers!",5,2024-03-12,17.36,78.48
+Sizzler Station,"Lacked seasoning.",2,2024-03-18,17.34,78.47
+Donut Den,"Fresh and tasty donuts.",4,2024-01-18,17.35,78.5
+Donut Den,"Too sugary.",3,2024-02-02,17.39,78.49
+BBQ Barn,"Great BBQ flavors.",5,2024-03-07,17.4,78.52
+BBQ Barn,"Too expensive.",3,2024-03-22,17.36,78.53
+The Kebab House,"Delicious kebabs.",5,2024-04-10,17.35,78.55
+The Kebab House,"Average taste.",3,2024-04-22,17.37,78.51
+Chili Bowl,"Love the spicy dishes!",4,2024-01-14,17.32,78.49
+Chili Bowl,"Too much spice.",2,2024-01-28,17.31,78.48
+Toast Avenue,"Best sandwiches ever!",5,2024-03-12,17.41,78.50
+Toast Avenue,"Not very fresh.",2,2024-03-24,17.42,78.53
+Naan Central,"Perfect naan and curries!",5,2024-02-18,17.33,78.51
+Naan Central,"Burnt naan.",2,2024-02-24,17.34,78.48
+Tandoori Place,"Fantastic tandoori!",5,2024-03-25,17.38,78.52
+Tandoori Place,"Dry meat.",3,2024-04-02,17.36,78.54
+Pho House,"Loved the pho soup!",5,2024-01-27,17.32,78.49
+Pho House,"Too bland.",3,2024-02-08,17.31,78.5
+The Fry Corner,"Crispy and delicious fries.",5,2024-03-04,17.41,78.55
+The Fry Corner,"Too oily.",2,2024-03-15,17.42,78.54
+Dumpling Den,"Tasty dumplings.",4,2024-01-19,17.34,78.49
+Dumpling Den,"Too salty.",3,2024-01-30,17.33,78.48
+Rice Bowl,"Amazing rice dishes!",5,2024-02-14,17.39,78.51
+Rice Bowl,"Lacks flavor.",2,2024-02-27,17.35,78.5
+Mocktail Lounge,"Refreshing drinks.",4,2024-03-22,17.37,78.52
+Mocktail Lounge,"Too sweet.",2,2024-04-05,17.38,78.54
+Green Table,"Nice healthy options.",5,2024-01-10,17.36,78.51
+Green Table,"Bland taste.",2,2024-02-03,17.34,78.55
+Dessert Lane,"Lovely desserts.",5,2024-01-26,17.35,78.5
+Dessert Lane,"Too sugary.",2,2024-02-07,17.38,78.53
+Yogurt World,"Fresh and tasty yogurt.",4,2024-03-10,17.33,78.47
+Yogurt World,"Lacks sweetness.",3,2024-03-17,17.39,78.49
+Wok & Roll,"Nice variety of dishes.",5,2024-02-15,17.32,78.54
+Wok & Roll,"Food was cold.",3,2024-02-28,17.31,78.52
+Momo Magic,"Loved the momos!",5,2024-01-29,17.34,78.5
+Momo Magic,"Too dry.",2,2024-02-10,17.33,78.53
+Ramen House,"Best ramen in town!",5,2024-03-08,17.36,78.55
+Ramen House,"Broth was bland.",3,2024-03-20,17.42,78.51
+Brunch Bliss,"Amazing brunch spread.",5,2024-01-25,17.38,78.49
+Brunch Bliss,"Overpriced.",2,2024-02-11,17.37,78.47
+Ice Cream Cove,"Love their ice cream!",5,2024-03-16,17.39,78.48
+Ice Cream Cove,"Ice cream was melted.",2,2024-03-23,17.4,78.52
+Poke Bowl,"Perfect poke bowls.",5,2024-02-04,17.32,78.54
+Poke Bowl,"Rice was undercooked.",2,2024-02-18,17.31,78.5
+Spicy Hub,"Great food and service!",5,2024-01-01,17.4,78.5
+Spicy Hub,"The food was average.",3,2024-01-15,17.35,78.5
+Spicy Hub,"Not satisfied with the service.",2,2024-02-01,17.45,78.55
+Urban Bites,"Loved the pasta and ambiance.",5,2024-03-02,17.34,78.53
+Urban Bites,"Service could be better.",3,2024-03-15,17.35,78.54
+Cafe Delight,"Amazing coffee and ambiance.",4,2024-01-10,17.33,78.52
+Cafe Delight,"Too crowded on weekends.",2,2024-02-05,17.32,78.48
+Grill Street,"Best BBQ in town!",5,2024-03-08,17.39,78.51
+Grill Street,"A bit overpriced.",3,2024-03-18,17.41,78.49
+Tandoori Treat,"Excellent tandoori dishes!",5,2024-04-10,17.4,78.47
+Tandoori Treat,"Food was cold, not happy.",2,2024-04-20,17.36,78.5
+Pizza Point,"Love their pepperoni pizza!",4,2024-02-14,17.37,78.53
+Pizza Point,"Could improve the crust.",3,2024-02-28,17.38,78.55
+Burger Haven,"Best burgers in the area!",5,2024-03-20,17.45,78.52
+Burger Haven,"Slow service.",2,2024-03-25,17.43,78.5
+Noodle Nest,"Great variety of noodles!",4,2024-01-25,17.44,78.49
+Noodle Nest,"Needs more spice.",3,2024-02-15,17.42,78.51
+Spice Villa,"Wonderful experience!",5,2024-02-28,17.35,78.53
+Spice Villa,"Food was bland.",2,2024-03-05,17.33,78.54
+Biryani Bliss,"Amazing biryani, must try!",5,2024-04-02,17.39,78.5
+Biryani Bliss,"Too oily.",2,2024-04-18,17.38,78.52
+Taste Town,"Great service and food.",4,2024-01-12,17.37,78.53
+Taste Town,"The food took too long.",3,2024-01-28,17.35,78.55
+Chaat Corner,"Authentic taste!",5,2024-03-10,17.36,78.49
+Chaat Corner,"Too spicy for me.",2,2024-03-20,17.44,78.48
+Dosa Delight,"Loved the masala dosa!",5,2024-02-14,17.39,78.47
+Dosa Delight,"Sambhar was too sweet.",3,2024-03-01,17.42,78.52
+Sushi Spot,"Best sushi in Hyderabad!",5,2024-01-18,17.31,78.5
+Sushi Spot,"Rice was undercooked.",2,2024-02-01,17.34,78.48
+Taco Town,"Great tacos, fresh ingredients.",4,2024-03-05,17.33,78.53
+Taco Town,"Too expensive.",3,2024-03-15,17.36,78.51
+Waffle World,"Best waffles around!",5,2024-01-22,17.38,78.47
+Waffle World,"Chocolate syrup tasted off.",2,2024-01-30,17.37,78.5
+Pasta Palace,"Perfect pasta every time!",5,2024-03-20,17.45,78.49
+Pasta Palace,"Could use more flavor.",3,2024-03-30,17.35,78.52
+Salad Shack,"Healthy and delicious.",4,2024-01-15,17.41,78.54
+Salad Shack,"Portions too small.",3,2024-02-01,17.43,78.53
+Wrap N Roll,"Loved the chicken wrap.",5,2024-02-28,17.42,78.48
+Wrap N Roll,"Dry and flavorless.",2,2024-03-05,17.35,78.47
+Bistro Bay,"Perfect seafood options.",4,2024-01-25,17.36,78.52
+Bistro Bay,"Overcooked prawns.",2,2024-02-14,17.33,78.5
+Juice Junction,"Fresh juices and smoothies.",5,2024-03-03,17.4,78.51
+Juice Junction,"Watery taste.",2,2024-03-17,17.44,78.55
+Deli Dreams,"Good sandwiches.",4,2024-01-20,17.37,78.53
+Deli Dreams,"Bread was stale.",2,2024-02-05,17.35,78.48
+Veggie Village,"Nice vegetarian options.",5,2024-01-30,17.39,78.5
+Veggie Village,"Lacked flavor.",3,2024-02-10,17.31,78.52
+The Curry Club,"Great curries and naan.",5,2024-03-15,17.32,78.47
+The Curry Club,"Too spicy.",2,2024-03-25,17.43,78.49
+Falafel Fiesta,"Loved the falafel!",5,2024-01-28,17.38,78.54
+Falafel Fiesta,"Too dry.",3,2024-02-20,17.42,78.55
+Sizzler Station,"Amazing sizzlers!",5,2024-03-12,17.36,78.48
+Sizzler Station,"Lacked seasoning.",2,2024-03-18,17.34,78.47
+Donut Den,"Fresh and tasty donuts.",4,2024-01-18,17.35,78.5
+Donut Den,"Too sugary.",3,2024-02-02,17.39,78.49
+BBQ Barn,"Great BBQ flavors.",5,2024-03-07,17.4,78.52
+BBQ Barn,"Too expensive.",3,2024-03-22,17.36,78.53
+The Taco Place,"Tacos were fantastic!",5,2024-01-04,17.35,78.53
+The Taco Place,"Salsa was too spicy for me.",3,2024-01-16,17.36,78.5
+Burger Bliss,"Best burger I've had in ages!",5,2024-02-15,17.34,78.54
+Burger Bliss,"Could use more seasoning.",3,2024-02-26,17.33,78.52
+Sushi Shack,"Fresh and tasty sushi!",4,2024-03-10,17.37,78.55
+Sushi Shack,"Overpriced for the portion size.",2,2024-03-18,17.35,78.48
+Italian Eats,"Loved the pasta!",5,2024-01-08,17.39,78.51
+Italian Eats,"Sauce was too salty.",3,2024-01-29,17.32,78.47
+Pizza Paradise,"Amazing pizza variety!",4,2024-02-17,17.38,78.52
+Pizza Paradise,"Cheese tasted artificial.",2,2024-02-25,17.33,78.49
+Soup & Salad,"Refreshing and light.",5,2024-03-02,17.41,78.53
+Soup & Salad,"Soup was cold.",3,2024-03-13,17.39,78.54
+Tandoor House,"Great tandoori dishes!",5,2024-01-24,17.34,78.5
+Tandoor House,"Lacked the authentic taste.",2,2024-02-05,17.35,78.48
+BBQ Joint,"Best ribs in town!",4,2024-03-20,17.36,78.53
+BBQ Joint,"Too oily for my taste.",3,2024-03-28,17.32,78.47
+Momo Place,"Loved the momos!",5,2024-01-30,17.38,78.52
+Momo Place,"Too greasy.",2,2024-02-14,17.36,78.51
+The Curry Spot,"Amazing curry flavors!",5,2024-03-14,17.39,78.53
+The Curry Spot,"Overwhelming spice levels.",3,2024-03-22,17.35,78.49
+Rice Heaven,"Perfect rice dishes!",4,2024-02-06,17.31,78.5
+Rice Heaven,"Too dry.",2,2024-02-20,17.37,78.48
+Falafel Hub,"Authentic falafel taste.",5,2024-01-22,17.33,78.52
+Falafel Hub,"Hummus was bland.",3,2024-01-28,17.35,78.55
+Wrap House,"Best wraps ever!",4,2024-02-15,17.39,78.47
+Wrap House,"Fillings were uneven.",2,2024-02-26,17.36,78.51
+Pho Phan,"The pho was delightful!",5,2024-03-05,17.32,78.54
+Pho Phan,"Lacked depth of flavor.",3,2024-03-12,17.34,78.55
+Vegan Venture,"Great for vegans!",5,2024-01-18,17.35,78.5
+Vegan Venture,"Too bland for my taste.",2,2024-02-03,17.33,78.49
+Bakery Bliss,"Amazing pastries!",5,2024-02-20,17.31,78.52
+Bakery Bliss,"A bit stale.",3,2024-02-28,17.36,78.53
+Burger Point,"Burgers are a must-try.",5,2024-01-25,17.38,78.51
+Burger Point,"The buns were soggy.",2,2024-02-15,17.32,78.48
+Grill House,"Excellent BBQ!",4,2024-03-11,17.34,78.5
+Grill House,"Could improve the seasoning.",3,2024-03-21,17.39,78.47
+Waffle Spot,"Best waffles in town!",5,2024-01-14,17.35,78.52
+Waffle Spot,"Too sweet for me.",2,2024-02-01,17.36,78.49
+Dosa Spot,"Amazing dosas!",5,2024-03-03,17.38,78.54
+Dosa Spot,"Chutney was watery.",2,2024-03-14,17.34,78.5
+The Juice Bar,"Refreshing drinks.",4,2024-02-25,17.32,78.48
+The Juice Bar,"Too watery.",2,2024-02-28,17.35,78.53
+Sizzler Shack,"Best sizzlers!",5,2024-01-30,17.36,78.5
+Sizzler Shack,"Lacked spices.",2,2024-02-12,17.33,78.52
+Dim Sum Delight,"Loved the dumplings!",4,2024-03-15,17.34,78.51
+Dim Sum Delight,"Portions were too small.",3,2024-03-24,17.31,78.48
+Pasta Palace,"Perfect pasta dishes!",5,2024-01-05,17.39,78.49
+Pasta Palace,"Too much garlic.",2,2024-01-29,17.37,78.52
+Smoothie Stop,"Best smoothies around.",4,2024-03-01,17.35,78.53
+Smoothie Stop,"Too sweet.",2,2024-03-11,17.32,78.54
+Salad Studio,"Healthy and fresh.",5,2024-02-10,17.33,78.51
+Salad Studio,"Not enough dressing.",3,2024-02-22,17.38,78.47
+Brunch Club,"Loved the brunch options!",5,2024-01-23,17.36,78.55
+Brunch Club,"Overcrowded.",3,2024-02-02,17.31,78.49
+The Kebab Corner,"Excellent kebabs!",4,2024-03-08,17.39,78.53
+The Kebab Corner,"Not tender enough.",2,2024-03-16,17.32,78.48
+Spice Village,"Great flavors!",5,2024-01-12,17.34,78.5
+Spice Village,"Too spicy.",3,2024-02-05,17.35,78.52
+Tapas Tasty,"Amazing tapas!",4,2024-03-06,17.31,78.49
+Tapas Tasty,"Too oily.",2,2024-03-14,17.39,78.51
+Korean Kitchen,"Best kimchi!",5,2024-01-28,17.35,78.55
+Korean Kitchen,"Food was cold.",3,2024-02-18,17.37,78.47
+Hotpot Heaven,"Amazing hotpot experience.",5,2024-03-12,17.36,78.51
+Hotpot Heaven,"Broth was bland.",3,2024-03-25,17.38,78.52
+Meat Lovers,"Great steaks!",4,2024-02-17,17.32,78.53
+Meat Lovers,"Too tough.",3,2024-02-28,17.33,78.54
+Dessert Dream,"Wonderful desserts!",5,2024-01-24,17.31,78.52
+Dessert Dream,"Too sugary.",2,2024-02-06,17.35,78.48
+Pancake Place,"Best pancakes!",5,2024-03-19,17.34,78.5
+Pancake Place,"Too fluffy for me.",3,2024-03-28,17.32,78.49
+Biryani Bowl,"Authentic biryani!",4,2024-02-09,17.39,78.54
+Biryani Bowl,"Too much oil.",3,2024-02-23,17.31,78.47
+Shawarma Shack,"Loved the shawarma.",5,2024-01-21,17.35,78.53
+Shawarma Shack,"Meat was tough.",2,2024-02-11,17.36,78.49
+Green Eatery,"Healthy and fresh.",5,2024-03-10,17.32,78.55
+Green Eatery,"Too bland.",3,2024-03-15,17.34,78.52
+Burger Blast,"Best burgers!",4,2024-01-16,17.38,78.5
+Burger Blast,"Too greasy.",2,2024-02-03,17.37

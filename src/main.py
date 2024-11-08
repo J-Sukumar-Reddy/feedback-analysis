@@ -75,7 +75,7 @@ def main():
     st.title('Restaurant Feedback Analytics and Insights')
 
     # File path
-    file_path = os.path.join('data', 'restaurant_feedback.csv')
+    file_path = os.path.join('data', 'restaurant_feedback01.csv')
     
     # Load and preprocess data
     data = load_data(file_path)

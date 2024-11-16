@@ -27,9 +27,8 @@ Install the required Python packages by running the following command:
 
 ```bash
 pip install -r requirements.txt
-
-
-### **Run the Application**
+```
+ **Run the Application**
 
 Once the dependencies are installed and the dataset is in place, run the Streamlit app with the following command:
 

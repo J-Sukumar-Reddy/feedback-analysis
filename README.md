@@ -33,7 +33,7 @@ pip install -r requirements.txt
 Once the dependencies are installed and the dataset is in place, run the Streamlit app with the following command:
 
 ```bash
-streamlit run src/app.py
+streamlit run src/main.py
 ```
 
 

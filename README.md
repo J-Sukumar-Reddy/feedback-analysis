@@ -32,9 +32,9 @@ pip install -r requirements.txt
 
 Once the dependencies are installed and the dataset is in place, run the Streamlit app with the following command:
 
-`bash
+```bash
 streamlit run src/app.py
-
+```
 
 
 This will start the web application and open it in your default browser.

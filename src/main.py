@@ -139,16 +139,25 @@ def main():
                     st.subheader("Restaurant Location on Map")
                     selected_restaurant_data = data[data['restaurant_name'] == selected_restaurant]
 
-                    # Ensure the latitude and longitude columns exist, otherwise use random values for the demonstration
+                    # Ensure the latitude and longitude columns exist and contain valid numeric data
                     if 'latitude' in selected_restaurant_data.columns and 'longitude' in selected_restaurant_data.columns:
                         restaurant_location = selected_restaurant_data[['latitude', 'longitude']]
+
+                        # Check for NaN or invalid values in latitude and longitude
+                        if restaurant_location.isnull().values.any() or (not np.issubdtype(restaurant_location['latitude'].dtype, np.number)) or (not np.issubdtype(restaurant_location['longitude'].dtype, np.number)):
+                            # Use fallback random coordinates if the data is invalid or missing
+                            restaurant_location = pd.DataFrame({
+                                'latitude': [np.random.uniform(low=17.3, high=17.6)],
+                                'longitude': [np.random.uniform(low=78.4, high=78.6)]
+                            })
+                        st.map(restaurant_location)  # Display the map with fallback coordinates
                     else:
+                        # If latitude/longitude columns are missing, use fallback random coordinates
                         restaurant_location = pd.DataFrame({
                             'latitude': [np.random.uniform(low=17.3, high=17.6)],
                             'longitude': [np.random.uniform(low=78.4, high=78.6)]
                         })
-
-                    st.map(restaurant_location)
+                        st.map(restaurant_location)  # Display fallback map with random coordinates
     
     elif choice == "Select a Dish":
         # Dropdown for dish selection
@@ -191,36 +200,6 @@ def main():
                 st.subheader("Rating Distribution (Pie Chart)")
                 pie_chart_fig = plot_pie_chart(restaurant_data['rating'])
                 st.pyplot(pie_chart_fig)
-                
-                # Feedback input
-                st.subheader("Add Your Feedback")
-                new_feedback = st.text_area("Your Feedback:")
-                new_rating = st.slider("Your Rating (1-5):", min_value=1, max_value=5, value=3)
-                new_date = st.date_input("Date of Feedback")
-                
-                if st.button("Submit Feedback"):
-                    if new_feedback:
-                        # Add new feedback to the dataframe
-                        data = add_feedback(data, best_restaurant, new_feedback, new_rating, new_date, selected_dish)
-                        # Save updated data to CSV
-                        data.to_csv(file_path, index=False)
-                        st.success("Thank you for your feedback!")
-                    else:
-                        st.error("Please enter feedback before submitting.")
-                    
-                # Map visualization
-                st.subheader("Restaurant Location on Map")
-                selected_restaurant_data = data[data['restaurant_name'] == best_restaurant]
-
-                if 'latitude' in selected_restaurant_data.columns and 'longitude' in selected_restaurant_data.columns:
-                    restaurant_location = selected_restaurant_data[['latitude', 'longitude']]
-                else:
-                    restaurant_location = pd.DataFrame({
-                        'latitude': [np.random.uniform(low=17.3, high=17.6)],
-                        'longitude': [np.random.uniform(low=78.4, high=78.6)]
-                    })
-
-                st.map(restaurant_location)
 
 # Run the app
 if __name__ == '__main__':

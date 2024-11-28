@@ -72,7 +72,7 @@ def main():
     st.title('Restaurant Feedback Analytics and Insights')
 
     # File path
-    file_path = os.path.join('data', 'restaurant_feedback01.csv')
+    file_path = os.path.join('data', 'restaurant_feedback.csv')
     
     # Load and preprocess data
     data = load_data(file_path)
@@ -137,20 +137,17 @@ def main():
                     
                     # Map visualization
                     st.subheader("Restaurant Location on Map")
-                    # Filter the data based on the selected restaurant
                     selected_restaurant_data = data[data['restaurant_name'] == selected_restaurant]
 
-                    # Ensure the latitude and longitude columns exist, otherwise, you can generate or set default values
+                    # Ensure the latitude and longitude columns exist, otherwise use random values for the demonstration
                     if 'latitude' in selected_restaurant_data.columns and 'longitude' in selected_restaurant_data.columns:
                         restaurant_location = selected_restaurant_data[['latitude', 'longitude']]
                     else:
-                        # If latitude and longitude are missing, use random values for the demonstration
                         restaurant_location = pd.DataFrame({
                             'latitude': [np.random.uniform(low=17.3, high=17.6)],
                             'longitude': [np.random.uniform(low=78.4, high=78.6)]
                         })
 
-                    # Show the map with the selected restaurant location
                     st.map(restaurant_location)
     
     elif choice == "Select a Dish":
@@ -211,23 +208,20 @@ def main():
                     else:
                         st.error("Please enter feedback before submitting.")
                     
-                    # Map visualization
-                    st.subheader("Restaurant Location on Map")
-                    # Filter the data based on the selected restaurant
-                    selected_restaurant_data = data[data['restaurant_name'] == best_restaurant]
+                # Map visualization
+                st.subheader("Restaurant Location on Map")
+                selected_restaurant_data = data[data['restaurant_name'] == best_restaurant]
 
-                    # Ensure the latitude and longitude columns exist, otherwise, you can generate or set default values
-                    if 'latitude' in selected_restaurant_data.columns and 'longitude' in selected_restaurant_data.columns:
-                        restaurant_location = selected_restaurant_data[['latitude', 'longitude']]
-                    else:
-                        # If latitude and longitude are missing, use random values for the demonstration
-                        restaurant_location = pd.DataFrame({
-                            'latitude': [np.random.uniform(low=17.3, high=17.6)],
-                            'longitude': [np.random.uniform(low=78.4, high=78.6)]
-                        })
+                if 'latitude' in selected_restaurant_data.columns and 'longitude' in selected_restaurant_data.columns:
+                    restaurant_location = selected_restaurant_data[['latitude', 'longitude']]
+                else:
+                    restaurant_location = pd.DataFrame({
+                        'latitude': [np.random.uniform(low=17.3, high=17.6)],
+                        'longitude': [np.random.uniform(low=78.4, high=78.6)]
+                    })
 
-                    # Show the map with the selected restaurant location
-                    st.map(restaurant_location)
+                st.map(restaurant_location)
 
-if __name__ == "__main__":
+# Run the app
+if __name__ == '__main__':
     main()
